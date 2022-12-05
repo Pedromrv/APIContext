@@ -6,7 +6,7 @@
 
 >**Context es una forma de comunicación del árbol de componentes en React**, ya que, nos evita pasar propiedades (props) de forma manual por cada nivel de componentes que tenga nuestro árbol.
 
-Recordemos que por lo regular **en una aplicación hecha en React los datos se propagan de los componentes padres a los hijos a través de las pops**.
+Recordemos que por lo general **en una aplicación hecha en React los datos se propagan de los componentes padres a los hijos a través de las pops**.
 
 Si bien, podemos hacer aplicaciones grandes utilizando este método de propagación de datos, llegará el momento en que el código se volverá muy complicado de leer y sobre todo de mantener, ya que, esta propagación se realiza por cada nivel.
 

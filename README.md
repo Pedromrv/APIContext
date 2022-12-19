@@ -1,4 +1,4 @@
-# APIContext
+# API Context
 -   Verás como comunicar componentes de padre a hijo, y de hermano a hermano, es una estructura común y que tendremos seguro en nuestros proyecto, si o si.
 -   Identificar de que componente viene un dato.
 -   Como se propaga la información entre tus componentes.
@@ -6,7 +6,8 @@
 
 >**Context es una forma de comunicación del árbol de componentes en React**, ya que, nos evita pasar propiedades (props) de forma manual por cada nivel de componentes que tenga nuestro árbol.
 
-Recordemos que por lo general **en una aplicación hecha en React los datos se propagan de los componentes padres a los hijos a través de las pops**.
+### Funcionamiento de context
+Recordemos que por lo regular **en una aplicación hecha en React los datos se propagan de los componentes padres a los hijos a través de las pops**.
 
 Si bien, podemos hacer aplicaciones grandes utilizando este método de propagación de datos, llegará el momento en que el código se volverá muy complicado de leer y sobre todo de mantener, ya que, esta propagación se realiza por cada nivel.
 
@@ -14,20 +15,20 @@ El funcionamiento de Context permite realizar una propagación de datos entre co
 
 Lo anterior nos permite crear aplicaciones escalables, sin alterar el hecho de que la información fluye de componentes padres a hijos.
 
-## Usar Context
+### Usar Context
 
 -   Comunicar una gran cantidad de componentes.
 -   Comunicar componentes hermanos.
 -   Si existen componentes intermedios que no requieren hacer uso implícito de propiedades.
 
-## Ventajas
+### Ventajas
 
 -   Puedes comunicar una gran cantidad de componentes que se encuentran en diferentes niveles.
 -   Aislamiento de componentes.
 -   Código mas legible.
 -   Concentración de actualización de datos
 
-## Desventajas
+### Desventajas
 
 -   Utilizar Context puede limitar la reutilización de componentes.
 
@@ -57,7 +58,7 @@ Características:
 -   Dicha función es capaz de recibir el valor del contexto actual, y retorna un elemento, o mejor dicho, un nodo de React.
 -   El valor recibido es igual a la propiedad **value** del **Provider** al que este suscrito, es decir, el mas cercano, ya que recuerda que React soporta anidación de **Provider**.
 
-## Declaración de Context
+### Declaración de Context
 
 Podemos declarar un Context a través de:
 
@@ -74,7 +75,7 @@ const {Provider, Consumer} = React.createContext();
 ```
 
 ---------------------------------------------------------------------------
-## Ejemplo:
+### Ejemplo:
 
 Vamos a crear un pequeño chat donde todos los componentes se van a enterar de lo que dicen los otros, es decir:
 
@@ -267,7 +268,7 @@ actualizarMensaje = (e, index)=>{
   ```
 
 
-## Código CSS de los componentes
+### Código CSS de los componentes
 
 ```css
 .padre{
